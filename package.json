@@ -1,11 +1,13 @@
 {
   "name": "jia-fanyi",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/main.js",
   "bin": {
-    "fy": "src/cli.ts"
+    "fy": "dist/cli.ts"
   },
-  "files": ["dist/**/*.js"],
+  "files": [
+    "dist/**/*.js"
+  ],
   "scripts": {
     "start": "ts-node-dev src/main.ts"
   },
