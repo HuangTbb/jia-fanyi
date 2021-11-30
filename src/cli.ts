@@ -1,0 +1,14 @@
+import {translate} from './main';
+const { Command } = require('commander');
+const program = new Command();
+program
+  .version('0.0.1')
+  .name('fy')
+  .usage('<English>')
+  .arguments('<English>')
+  .action(function (english){
+    console.log(english)
+    translate(english)
+  })
+
+program.parse(process.argv)
