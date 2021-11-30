@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {translate} from './main';
 const { Command } = require('commander');
 const program = new Command();
@@ -6,8 +7,7 @@ program
   .name('fy')
   .usage('<English>')
   .arguments('<English>')
-  .action(function (english){
-    console.log(english)
+  .action(function (english: string){
     translate(english)
   })
 
