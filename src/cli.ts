@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-import {translate} from './main';
-const { Command } = require('commander');
+import { translate } from "./main";
+const { Command } = require("commander");
 const program = new Command();
 program
-  .version('0.0.2')
-  .name('fy')
-  .usage('<English>')
-  .arguments('<English>')
-  .action(function (english: string){
-    translate(english)
-  })
+  .version("0.0.1")
+  .name("fy")
+  .usage("<English>")
+  .arguments("<English>")
+  .action(function (english: string) {
+    translate(english);
+  });
 
-program.parse(process.argv)
+program.parse(process.argv);
